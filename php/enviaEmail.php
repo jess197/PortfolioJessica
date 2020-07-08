@@ -23,7 +23,7 @@ try {
    $mail->Port = 587; 
 
    $mail->setFrom('seu email'); 
-   $mail->addAddress('sua senha'); 
+   $mail->addAddress('seu email'); 
 
    $mail->isHTML(true); 
    $mail->Subject = 'Email - Site Jessica Costa e Silva'; 
