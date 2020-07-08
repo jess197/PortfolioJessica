@@ -1,0 +1,234 @@
+.brand{ 
+  color: #bf80ff;
+  font-family: Montserrat;
+}
+
+.title{
+  color:white;
+}
+
+@media screen and (min-width: 800px){
+.navbar-brand{
+  margin-left: 50px;
+}
+}
+
+@media screen and (max-width: 600px){
+  .navbar-toggler{
+    margin-left: -50px;
+  }
+  }
+
+
+.navbar-nav{
+  font-family: Montserrat;
+
+}
+
+body{
+  background-color: #EEEEEE;
+  
+}
+
+.section{
+  font-family: Montserrat;
+  color: #bf80ff
+}
+
+
+.img-fluid{
+  width: 490px;
+  height: 490px;
+  border-radius: 50%;
+  box-shadow: 3px 3px 5px 2px #ccc;
+  margin-top: 100px;
+
+}
+
+@media screen and (max-width: 480px){
+  .img-fluid{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 5px 2px #ccc;
+    margin-top: 100px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+  
+  }
+}
+
+.titleSobreMim{
+  font-family: Montserrat;
+  color: #9900cc
+
+}
+
+.titleProjetos{
+  font-family: Montserrat;
+  color: #9900cc
+
+}
+
+p{
+  font-family: Montserrat;
+}
+
+#sobremim{
+    padding-top: 100px;
+}
+
+.card{
+  margin: 0 auto; 
+  float: none; 
+  margin-bottom: 60px; 
+  font-family: Montserrat;
+  padding-top: 15px;
+  box-shadow: 3px 3px 5px 2px #ccc;
+  
+}
+span{
+  font-family: Montserrat;
+  color: #9900cc
+}
+
+.card-body{
+  font-family: Montserrat;
+
+}
+
+.card-img-top{
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+
+.icon{
+  width: 50px;
+  height: 65px;
+  padding-top: 15px;
+}
+
+
+.footer{
+  background-color: black;
+  height: 180px;
+  margin-top: 5px;
+  color: grey
+}
+
+
+.home{
+  background-image: url(../img/imagem.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+a{
+  font-family: Montserrat;
+  color: #9900cc;
+}
+
+
+@media screen and (min-width: 1100px){
+[data-animate]{
+  opacity: 0;
+  transition:.5s .25s ease-out;
+}
+
+[data-animate="left"]{
+  transform: translate3d(-100px,0,0); 
+  }
+
+[data-animate="right"]{
+  transform: translate3d(100px,0,0); 
+}
+
+[data-animate="top"]{
+  transform: translate3d(0,100px,0); 
+}
+
+[data-animate="bottom"]{
+  transform: translate3d(0,-100px,0);
+}
+
+[data-animate].animate{
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px); 
+}
+}
+
+
+.projetos{
+  margin-top: 150px;
+}
+
+@media screen and (min-width: 1100px){
+.card-img{
+  width: auto;
+  margin-top:20px;
+}
+
+}
+
+.card-title{ 
+  font-family: Montserrat;
+  color: #9900cc;
+  margin-top:20px;
+
+}
+
+.projetos{
+  background-image: url(../img/fundoPorfolio.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+}
+
+.contato{
+  padding-top: 240px;
+}
+
+.card-text{
+  color: black
+}
+
+.btn-primary{color:#fff;background-color:#9900cc;border-color:#bf80ff}
+
+.btn-primary:hover{color:#fff;background-color:#9900cc;border-color:#bf80ff}
+.btn-primary:focus,.btn-primary.focus{box-shadow:0 0 0 .2rem #bf80ff}
+.btn-primary.disabled,.btn-primary:disabled{color:#fff;background-color:#9900cc;border-color:#bf80ff}
+.btn-primary:not(:disabled):not(.disabled):active,.btn-primary:not(:disabled):not(.disabled).active,.show>.btn-primary.dropdown-toggle{color:#fff;background-color:#bf80ff;border-color:#bf80ff}
+.btn-primary:not(:disabled):not(.disabled):active:focus,.btn-primary:not(:disabled):not(.disabled).active:focus,.show>.btn-primary.dropdown-toggle:focus{box-shadow:0 0 0 .2rem #bf80ff}
+
+.btn-outline-primary{color:#9900cc;background-color:transparent;background-image:none;border-color:#9900cc}.btn-outline-primary:hover{color:#bf80ff;background-color:#bf80ff;border-color:#9900cc}
+.btn-outline-primary:focus,.btn-outline-primary.focus{box-shadow:0 0 0 .2rem #9900cc}
+.btn-outline-primary.disabled,.btn-outline-primary:disabled{color:#9900cc;background-color:#9900cc}
+.btn-outline-primary:not(:disabled):not(.disabled):active,.btn-outline-primary:not(:disabled):not(.disabled).active,.show>.btn-outline-primary.dropdown-toggle{color:#fff;background-color:#bf80ff;border-color:#9900cc}
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus,.btn-outline-primary:not(:disabled):not(.disabled).active:focus,.show>.btn-outline-primary.dropdown-toggle:focus{box-shadow:0 0 0 .2rem #bf80ff}
+
+.btn.btn-primary {
+  background-color: #9900cc
+}
+
+.btn.btn-primary:active,
+.btn.btn-primary:hover,
+.btn.btn-primary:focus {
+  background-color: #9900cc !important;
+  border-color:#bf80ff
+}
+
+
+
