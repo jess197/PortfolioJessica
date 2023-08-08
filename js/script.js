@@ -1,57 +1,47 @@
-
-//PARALLAX
-$(document).ready(function(){
-    var scrollLink = $(' .scroll'); 
-    var aux = this;
-
-    // Smooth scrolling 
-    scrollLink.click(function(event){
-        event.preventDefault(); 
-        $('body,html').animate({
-          scrollTop: $(this.hash).offset().top 
-        }, 1500);
-    }); 
+$(document).ready(function() {
+    var scrollLink = $('.scroll');
     
-    // Active link switching 
-    $(window).scroll(function(){
-        var aux = this;
-        var scrollbarlocation = $(this).scrollTop(); 
-        //console.log(scrollbarlocation)
-        scrollLink.each(function(){
-
-            var sectionOffset = $(this.hash).offset().top
-
-            if( sectionOffset <= scrollbarlocation){
-                $(this).parent().addClass('active');
-                $(this).parent().siblings().removeClass('active');
-            }
-        })
-    })
-});
-
-// SCROLL MENUS 
-const target = document.querySelectorAll('[data-animate]'); /* $ */
-const animationClass = 'animate';
-
-function animeScroll(){
-  const windowTop = window.pageYOffset + ((window.innerHeight*3)/4); 
-  target.forEach(function(element){
-    if((windowTop) >= element.offsetTop){
-        element.classList.add(animationClass); 
-    } else{
+    scrollLink.click(function(event) {
+      event.preventDefault();
+      $('body, html').animate({
+        scrollTop: $(this.hash).offset().top - 100 // Adjust the offset to center the content
+      }, 1500);
+    });
+  
+    $(window).scroll(function() {
+      var scrollbarLocation = $(this).scrollTop();
+      scrollLink.each(function() {
+        var sectionOffset = $(this.hash).offset().top;
+        if (sectionOffset <= scrollbarLocation) {
+          $(this).parent().addClass('active');
+          $(this).parent().siblings().removeClass('active');
+        }
+      });
+    });
+  });
+  
+  const target = document.querySelectorAll('[data-animate]');
+  const animationClass = 'animate';
+  
+  function animeScroll() {
+    const windowTop = window.pageYOffset + (window.innerHeight / 2); // Adjust the value for centering
+    target.forEach(function(element) {
+      if (windowTop >= element.offsetTop) {
+        element.classList.add(animationClass);
+      } else {
         element.classList.remove(animationClass);
-    }
-  })
-};
-
-//animeScroll(); 
-
-if(target.length){
-window.addEventListener('scroll', function(){
-    animeScroll();
-})
-};
-
+      }
+    });
+  }
+  
+  if (target.length) {
+    window.addEventListener('scroll', function() {
+      animeScroll();
+    });
+  }
+  
+  
+  
 
 // Email 
 $(document).ready(function(){
