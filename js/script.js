@@ -52,11 +52,11 @@ $(document).ready(function(){
 
         /*Validando*/
         if(nome.length <= 2){
-            alert('Informe seu nome'); 
+            alert('Please insert your name'); 
             return false; 
         }  
         if(mensagem.length <= 5){
-            alert('Escreva uma mensagem');
+            alert('Write a message');
             return false;
         }
 
@@ -73,9 +73,9 @@ $(document).ready(function(){
             success: function(data){
                 console.log('"' + data.trim() + '"');
                if(data.trim()=='1'){
-                    $('#message').html('<div class="alert alert-success alert-dismissible fade show">Sua Mensagem foi enviada com sucesso<button type="button" class="close" data-dismiss="alert">&times;</button></div>')
+                    $('#message').html('<div class="alert alert-success alert-dismissible fade show">Email sent successfully!<button type="button" class="close" data-dismiss="alert">&times;</button></div>')
                }else{
-                $('#message').html('<div class="alert alert-danger alert-dismissible fade show">Ocorreu um erro ao enviar sua mensagem.<button type="button" class="close" data-dismiss="alert">&times;</button></div>')
+                $('#message').html('<div class="alert alert-danger alert-dismissible fade show">An error occurred while sending your message.<button type="button" class="close" data-dismiss="alert">&times;</button></div>')
                }
             },
             error: function(data){
