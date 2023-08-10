@@ -6,4 +6,4 @@
 > Access: [Jessica's Website](https://jessicacostaesilva.com.br/) 
 
 ##  Contact
-Jessica Caroline Costa e Silva - [Email](jessicacostaesilva97@gmail.com) | [Linkedin](https://www.linkedin.com/in/jessicaccostaesilva)
+Jessica Caroline Costa e Silva | [Linkedin](https://www.linkedin.com/in/jessicaccostaesilva)
