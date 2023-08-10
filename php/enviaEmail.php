@@ -6,6 +6,7 @@ $mensagem = $_POST['mensagem'];
 require_once('../src/PHPMailer.php');
 require_once('../src/SMTP.php'); 
 require_once('../src/Exception.php'); 
+require_once './config.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
@@ -18,25 +19,26 @@ try {
    $mail->isSMTP(); 
    $mail->Host = 'smtp.gmail.com'; 
    $mail->SMTPAuth = true; 
-   $mail->Username = 'seu email'; 
-   $mail->Password = 'sua senha'; 
+   $mail->Username = $config['email'];
+   $mail->Password = $config['senha'];
    $mail->Port = 587; 
+   #$mail->SMTPDebug = 2;
 
-   $mail->setFrom('seu email'); 
-   $mail->addAddress('seu email'); 
+   $mail->setFrom($config['email']); 
+   $mail->addAddress($config['email']); 
 
    $mail->isHTML(true); 
-   $mail->Subject = 'Email - Site Jessica Costa e Silva'; 
+   $mail->Subject = 'Email - Website Jessica'; 
    $mail->Body = '<b>Nome: </b>'.$nome.'<br><b>Email: </b>'.$email.'<br><b>Mensagem: </b>'.$mensagem; 
    $mail->AltBody = 'Nome: '.$nome.' Email: '.$email.' Mensagem: '.$mensagem;
    
    if($mail->send()){
-       echo '1'; 
+       echo '1'; ## Success
    }else{
-       echo 'Email não enviado'; 
+       echo 'Email not sent'; 
    }
 
 } catch(Exception $e){
-    echo "Erro ao enviar mensagem :{$mail->ErrorInfo}"; 
+    echo "Error sending message: {$mail->ErrorInfo}"; 
 }
-?> 
+?>  
