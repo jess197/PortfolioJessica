@@ -52,11 +52,11 @@ $(document).ready(function(){
 
         /*Validando*/
         if(nome.length <= 2){
-            alert('Please insert your name'); 
+            alert('Please insert your name bigger than two characters'); 
             return false; 
         }  
         if(mensagem.length <= 5){
-            alert('Write a message');
+            alert('Write a message bigger than five characters');
             return false;
         }
 

@@ -176,7 +176,7 @@ a{
 
 
 .projetos{
-  background-image: url(../img/fundoPorfolio.png);
+  background-image: url(../img/back.jpg);
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -184,6 +184,7 @@ a{
   color: #ffffff;
   max-width: 100%;
   height: auto;
+  font-weight: bold;
 
 }
 
@@ -251,8 +252,10 @@ a{
   max-width: 100%;
   height: auto;
   max-height: 825px;
-  margin-top: -50px;
-  margin-bottom:-50px  
+  margin-top: -30px;
+  margin: 0 auto;  
+  display: block;
+  position: relative;
 }
 
 
@@ -273,3 +276,21 @@ a{
 }
 
 /* Additional responsive adjustments as needed */
+
+
+.gray-box {
+  font-weight: bold;
+  display: inline-block;
+  box-shadow: 0px 2px 4px rgba(242, 239, 239, 0.957);
+  background-color: lightgray;
+  padding: 10px; 
+  border-radius: 5px;
+}
+
+.details-box {
+  color: #fff;   
+}
+
+.card-projects{
+ margin-top: 20px;
+}
